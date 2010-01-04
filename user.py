@@ -1,6 +1,12 @@
 #!/usr/bin/python
 # encoding: utf-8
 
+"""
+	user.py - Programa usuario
+
+"""
+
+
 import cherrypy
 from cherrypy.process.plugins import Monitor
 from soaplib.wsgi_soap import SimpleWSGISoapApp

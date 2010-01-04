@@ -1,10 +1,8 @@
 #!/usr/bin/env python
 # encoding: utf-8
 """
-BackgroundTaskQueue.py
+	BackgroundTaskQueue.py 
 
-Created by Axel Hernández Ferrera on 2009-12-29.
-Copyright (c) 2009 __MyCompanyName__. All rights reserved.
 """
 from cherrypy.process.plugins import SimplePlugin
 import Queue

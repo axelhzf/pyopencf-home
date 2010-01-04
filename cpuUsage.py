@@ -3,8 +3,6 @@
 """
 cpuUsage.py
 
-Created by Axel Hernández Ferrera on 2010-01-02.
-Copyright (c) 2010 __MyCompanyName__. All rights reserved.
 """
 
 import time

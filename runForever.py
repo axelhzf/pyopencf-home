@@ -3,8 +3,6 @@
 """
 runForever.py
 
-Created by Axel Hernández Ferrera on 2009-12-31.
-Copyright (c) 2009 __MyCompanyName__. All rights reserved.
 """
 
 from cherrypy.process.plugins import SimplePlugin

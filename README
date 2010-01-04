@@ -1,3 +1,24 @@
 PyOpenCF@home
 
-Utilizar la librería pyopencf para ofrecer un servicio similar a seti@home
+Autores: Axel Hernández Ferrera
+		 Alejandro Varela Pérez
+
+Librería que permite realizar una tarea similar a la realizada por seti@home pero para cualquier problema.
+
+Se basa en el código de PyOpenCF de Juan Carlos Castillo Cano:
+	http://opencf.pcg.ull.es/trac/
+	
+Dependencias:
+	- Python 2.5.x
+	- soaplib 0.7.2 o posterior, <http://trac.optio.webfactional.com/wiki/soaplib>
+	- CherryPy 3.1.2 o posterior, <http://www.cherrypy.org/>
+	- SUDS <https://fedorahosted.org/suds/>
+	
+Configuración:
+	- Editar fichero config.py:
+		- Habilitar el control de CPU únicamente en sistemas unix
+		- Definir puertos disponibles para cliente y servidor
+		
+Ejecución:
+	- Servidor : ./servidor
+	- Usuario  : ./user

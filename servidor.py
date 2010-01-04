@@ -1,5 +1,12 @@
 #!/usr/bin/python
 # encoding: utf-8
+
+"""
+	ervidor.py - Programa que ejecuta el servidor pyopcf@home
+
+"""
+
+
 from suds.client import Client
 import random
 from soaplib.wsgi_soap import SimpleWSGISoapApp

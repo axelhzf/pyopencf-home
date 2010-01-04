@@ -1,10 +1,8 @@
 #!/usr/bin/env python
 # encoding: utf-8
 """
-config.py
+	config.py - Fichero de configuración
 
-Created by Axel Hernández Ferrera on 2009-12-30.
-Copyright (c) 2009 __MyCompanyName__. All rights reserved.
 """
 
 #Carpeta donde está el problema que se va a resolver
