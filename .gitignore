@@ -1,0 +1,6 @@
+*.pyc
+simple
+presentacion
+pi/*.pyc
+wrapper/*.pyc
+PYSMELLTAGS*

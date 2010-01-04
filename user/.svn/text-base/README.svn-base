@@ -1,0 +1,34 @@
+Repositorio del proyecto Python OpenCF
+RAMA PYOPENCFSERVER
+
+Autor: Juan Carlos Castillo Cano
+
+Librerias necesarias
+
+- soaplib 0.7.2 o posterior, <http://trac.optio.webfactional.com/wiki/soaplib>
+
+- CherryPy 3.1.2 o posterior, <http://www.cherrypy.org/> 
+
+- Python 2.5.2 a 2.5.8
+
+Instalacion
+
+  Paso previo. Configure su servidor para que pueda desplegar PyOpenCFServer.
+     * Tutorial de CherryPy en Apache <http://tools.cherrypy.org/wiki/BehindApache>, o
+     * Configurar CherryPy <http://www.cherrypy.org/wiki/ConfigAPI>
+  
+  1) Configure el archivo - config/config.py  - adaptandolo a sus necesidades
+  2) Cree los archivos XML descriptores de los servicios (vea ejemplos en directorio /Xml)
+  3) Compile los ejecutables de los servicios en el directorio /bin
+  4) ejecute - bin/addjob.py SERVICIO1.xml SERVICIO2.xml para agregar los servicios al servidor
+  5) Facilite la direccion del documento wsdl, p.e. <http://pyopencf.mydominio.com/pyopencf.wsdl> 
+     a los clientes PyOpenCF
+
+Test
+
+   1) Realice los pasos 1 a 4 de la Instalacion
+   2) Ejecute - python server.py - para instanciar una prueba del servidor en local
+   3) El servidor de pruebas sera accesible en la direccion <http://localhost:8021/soap.wsdl/>
+      para los clientes PyOpenCF que tenga instalados en la máquina (consola y/o web)
+
+

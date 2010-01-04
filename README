@@ -1,4 +1,1 @@
-Problema de prueba que muestra cómo ejecutar programas escritos en lenguajes distintos de python.
-El principal problema es que el resultado de la ejecución es un string. Si se quisieran obtener varios
-tipos de datos distintos habría que hacer un análisis de la salida. Este análisis se tendría que hacer
-en el archivo job.py
+PyOpenCF@home
