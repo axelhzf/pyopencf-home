@@ -2,7 +2,7 @@
 # encoding: utf-8
 
 """
-	ervidor.py - Programa que ejecuta el servidor pyopcf@home
+	servidor.py - Programa que ejecuta el servidor pyopcf@home
 
 """
 
