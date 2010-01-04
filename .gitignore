@@ -4,3 +4,4 @@ presentacion
 pi/*.pyc
 wrapper/*.pyc
 PYSMELLTAGS*
+.DS_Store
