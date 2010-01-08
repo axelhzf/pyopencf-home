@@ -13,7 +13,6 @@ from soaplib.wsgi_soap import SimpleWSGISoapApp
 from soaplib.service import soapmethod
 from soaplib.serializers.primitive import String, Boolean, Integer, Array
 import cherrypy
-from cola import BackgroundTaskQueue
 from soaplib.serializers.clazz import ClassSerializer
 from cherrypy.process.plugins import Monitor
 from config import *

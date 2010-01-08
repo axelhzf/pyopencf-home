@@ -13,7 +13,6 @@ from soaplib.wsgi_soap import SimpleWSGISoapApp
 from soaplib.service import soapmethod
 from soaplib.serializers.primitive import Boolean, Integer
 from time import sleep
-from cola import BackgroundTaskQueue
 from runForever import RunForever
 from cpuUsage import *
 
