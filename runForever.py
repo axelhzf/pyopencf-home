@@ -24,7 +24,7 @@ class RunForever(SimplePlugin):
 			
 
 	def stop(self):
-		self.running = False
+		self.running = False      
 		if self.thread:
 			self.thread.join()
 			self.thread = None

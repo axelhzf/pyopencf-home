@@ -25,11 +25,11 @@ exec("from " + PROBLEM + ".job import Job")
 exec("from " + PROBLEM + ".parameters import Parameters")
 exec("from " + PROBLEM + ".result import Result")	
 
+WAIT_TIME = 60
 class PyOCFAtHomeUser(SimpleWSGISoapApp):		
 	@soapmethod(Parameters, _returns=Result)
 	def run(self, valor):	
 		print "Haciendo el trabajo"
-		#sleep(20) #Sleep para probar 
 		resultado = Result()
 		resultado.identificador = valor.identificador
 		j = Job()
@@ -43,7 +43,6 @@ def requestJob():
 	"""Se ejecuta periodicamente. Comprueba que el cliente esté trabajando. 
 	   Si no está trabajando le pide trabajo al servidor"""
 	
-
 	print "Voy a pedir trabajo"
 		
 	try:		
@@ -60,15 +59,13 @@ def requestJob():
 		
 		if res == 0:
 			print "No hay trabajo disponible en el servidor"
-			sleep(60)
+			sleep(WAIT_TIME)
 	except Exception, e:
-		print "[Error]" + str(e)
-		
+		print "[Error]" + str(e)	
 		"""Normalmente el error se produce porque el servidor no está disponible
 		   espera 60 segundos para volver a hacer el siguiente intento"""
-		sleep(1)
+		sleep(WAIT_TIME)
 			
-
 
 def randomizePort():
 	"""Busca puertos aleatorios dentro del rango establecido en el fichero de configuracion"""	
@@ -137,6 +134,4 @@ if __name__ == '__main__':
 		server.start()
 	except KeyboardInterrupt:
 		print "\n"
-		server.stop()
-		
-		
+		server.stop()	
